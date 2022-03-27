@@ -1,0 +1,14 @@
+enum State{
+	ACTIVE,
+    INACTIVE
+}
+
+entity Cliente{
+	documentNumber String  required maxlength(255),
+    firstName String required maxlength(50),
+    firstSurname String required maxlength(50),
+    secondName String  maxlength(50),
+    secondSurname String  maxlength(50),
+    imgUrl ImageBlob, 
+    firmResponsable ImageBlob
+}
